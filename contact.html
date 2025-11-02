@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - JANA URPAQ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="img/logo.png" alt="JANA URPAQ Logo" class="logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch and let's plan your perfect journey</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-page">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h2>Send Us a Message</h2>
+                    <p>Fill out the form below and we'll get back to you within 24 hours</p>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name"><i class="fas fa-user"></i> Full Name *</label>
+                                <input type="text" id="name" name="name" required placeholder="Your full name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><i class="fas fa-envelope"></i> Email *</label>
+                                <input type="email" id="email" name="email" required placeholder="your@email.com">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone"><i class="fas fa-phone"></i> Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="+7 XXX XXX XXXX">
+                            </div>
+                            <div class="form-group">
+                                <label for="service"><i class="fas fa-concierge-bell"></i> Service Interest</label>
+                                <select id="service" name="service">
+                                    <option value="">Select a service</option>
+                                    <option value="flights">Flight Tickets</option>
+                                    <option value="beach">Beach Holidays</option>
+                                    <option value="mountain">Mountain Tours</option>
+                                    <option value="hotel">Hotel Booking</option>
+                                    <option value="excursions">Guided Excursions</option>
+                                    <option value="custom">Custom Package</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="destination"><i class="fas fa-map-marker-alt"></i> Preferred Destination</label>
+                            <input type="text" id="destination" name="destination" placeholder="e.g., Maldives, Switzerland, Dubai">
+                        </div>
+                        <div class="form-group">
+                            <label for="message"><i class="fas fa-comment"></i> Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell us about your dream vacation..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                        <div id="formMessage" class="form-message"></div>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info-section">
+                    <h2>Contact Information</h2>
+                    <p>Reach out to us directly through any of these channels</p>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3>Kudaibek Ramazan</h3>
+                        <p>Travel Consultant</p>
+                        <a href="tel:+77757846785" class="contact-link">
+                            <i class="fas fa-phone"></i> +7 775 784 6785
+                        </a>
+                        <a href="https://wa.me/77757846785" class="contact-link whatsapp">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3>Khemedenov Daulet</h3>
+                        <p>Travel Consultant</p>
+                        <a href="tel:+77026453655" class="contact-link">
+                            <i class="fas fa-phone"></i> +7 702 645 3655
+                        </a>
+                        <a href="https://wa.me/77026453655" class="contact-link whatsapp">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+
+                    <div class="contact-card social-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <h3>Follow Us on Instagram</h3>
+                        <p>Daily travel inspiration & special offers</p>
+                        <a href="https://instagram.com/janaurpaq.kz" target="_blank" class="contact-link instagram">
+                            <i class="fab fa-instagram"></i> @janaurpaq.kz
+                        </a>
+                    </div>
+
+                    <div class="office-hours">
+                        <h3><i class="fas fa-clock"></i> Office Hours</h3>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                        <p>Saturday: 10:00 AM - 4:00 PM</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="img/logo.png" alt="JANA URPAQ Logo" class="logo">
+                    <p class="footer-slogan">See more. Feel more. Be JANA URPAQ</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-phone"></i> +7 775 784 6785</p>
+                    <p><i class="fas fa-phone"></i> +7 702 645 3655</p>
+                    <a href="https://instagram.com/janaurpaq.kz" target="_blank" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 JANA URPAQ. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
