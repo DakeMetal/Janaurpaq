@@ -1106,3 +1106,20 @@ body {
         font-size: 2rem;
     }
 }
+
+.language-switcher {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.language-switcher a {
+  color: #004aad; /* change to your brand blue */
+  font-weight: 600;
+  margin: 0 6px;
+  text-decoration: none;
+}
+
+.language-switcher a:hover {
+  opacity: 0.7;
+}
