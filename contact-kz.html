@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Байланыс - JANA URPAQ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="img/logo.png" alt="JANA URPAQ Logo" class="logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Басты бет</a></li>
+                <li><a href="services.html">Қызметтер</a></li>
+                <li><a href="destinations.html">Бағыттар</a></li>
+                <li><a href="about.html">Біз туралы</a></li>
+                <li><a href="contact.html" class="active">Байланыс</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="container">
+            <h1>Бізбен байланысыңыз</h1>
+            <p>Байланысыңыз — біз сіздің тамаша демалысыңызды жоспарлауға көмектесеміз</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-page">
+        <div class="container">
+            <div class="contact-wrapper">
+
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h2>Хабарлама жіберіңіз</h2>
+                    <p>Төмендегі форманы толтырыңыз — біз 24 сағат ішінде жауап береміз</p>
+
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name"><i class="fas fa-user"></i> Толық аты-жөніңіз *</label>
+                                <input type="text" id="name" name="name" required placeholder="Аты-жөніңіз">
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><i class="fas fa-envelope"></i> Электронды пошта *</label>
+                                <input type="email" id="email" name="email" required placeholder="email@мысалы.com">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone"><i class="fas fa-phone"></i> Телефон нөмірі *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="+7 XXX XXX XXXX">
+                            </div>
+                            <div class="form-group">
+                                <label for="service"><i class="fas fa-concierge-bell"></i> Қызықтыратын қызмет</label>
+                                <select id="service" name="service">
+                                    <option value="">Қызметті таңдаңыз</option>
+                                    <option value="flights">Әуе билеттері</option>
+                                    <option value="beach">Жағажай демалысы</option>
+                                    <option value="mountain">Тау турлары</option>
+                                    <option value="hotel">Қонақүй брондау</option>
+                                    <option value="excursions">Гидпен экскурсиялар</option>
+                                    <option value="custom">Жеке тур пакеті</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="destination"><i class="fas fa-map-marker-alt"></i> Қалаған бағыт</label>
+                            <input type="text" id="destination" name="destination" placeholder="мысалы: Мальдивы, Швейцария, Дубай">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message"><i class="fas fa-comment"></i> Хабарлама *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Армандаған демалысыңызды сипаттаңыз..."></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Хабарламаны жіберу
+                        </button>
+
+                        <div id="formMessage" class="form-message"></div>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-section">
+                    <h2>Байланыс мәліметтері</h2>
+                    <p>Төмендегі байланыс көздері арқылы бізге тікелей хабарласыңыз</p>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3>Құдайбек Рамазан</h3>
+                        <p>Туризм бойынша кеңесші</p>
+                        <a href="tel:+77757846785" class="contact-link">
+                            <i class="fas fa-phone"></i> +7 775 784 6785
+                        </a>
+                        <a href="https://wa.me/77757846785" class="contact-link whatsapp">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3>Хемеденов Даулет</h3>
+                        <p>Туризм бойынша кеңесші</p>
+                        <a href="tel:+77026453655" class="contact-link">
+                            <i class="fas fa-phone"></i> +7 702 645 3655
+                        </a>
+                        <a href="https://wa.me/77026453655" class="contact-link whatsapp">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+
+                    <div class="contact-card social-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <h3>Instagram парақшамыз</h3>
+                        <p>Күнделікті саяхат идеялары мен арнайы ұсыныстар</p>
+                        <a href="https://instagram.com/janaurpaq.kz" target="_blank" class="contact-link instagram">
+                            <i class="fab fa-instagram"></i> @janaurpaq.kz
+                        </a>
+                    </div>
+
+                    <div class="office-hours">
+                        <h3><i class="fas fa-clock"></i> Жұмыс уақыты</h3>
+                        <p>Дүйсенбі – Жұма: 9:00 – 18:00</p>
+                        <p>Сенбі: 10:00 – 16:00</p>
+                        <p>Жексенбі: Демалыс</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="img/logo.png" alt="JANA URPAQ Logo" class="logo">
+                    <p class="footer-slogan">See More. Feel More. Be JANA URPAQ</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Жылдам сілтемелер</h4>
+                    <ul>
+                        <li><a href="index.html">Басты бет</a></li>
+                        <li><a href="services.html">Қызметтер</a></li>
+                        <li><a href="destinations.html">Бағыттар</a></li>
+                        <li><a href="about.html">Біз туралы</a></li>
+                        <li><a href="contact.html">Байланыс</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Байланыс</h4>
+                    <p><i class="fas fa-phone"></i> +7 775 784 6785</p>
+                    <p><i class="fas fa-phone"></i> +7 702 645 3655</p>
+                    <a href="https://instagram.com/janaurpaq.kz" target="_blank" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 JANA URPAQ. Барлық құқықтар қорғалған.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
